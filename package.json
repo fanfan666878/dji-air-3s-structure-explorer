@@ -1,0 +1,32 @@
+{
+  "name": "dji-air-3s-structure-explorer",
+  "version": "1.0.0",
+  "description": "Interactive DJI Air 3S exploded-view experience built entirely with Three.js primitives.",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --minify --format=iife --outfile=app.bundle.js",
+    "watch": "esbuild src/app.js --bundle --format=iife --outfile=app.bundle.js --watch",
+    "start": "node scripts/serve.mjs"
+  },
+  "keywords": [
+    "threejs",
+    "dji-air-3s",
+    "3d",
+    "exploded-view",
+    "webgl",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
